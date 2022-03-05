@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RateLimiting_Using_AspNetCoreRateLimitPackage</name>
+    </assembly>
+    <members>
+        <member name="M:RateLimiting_Using_AspNetCoreRateLimitPackage.Controller.EmployeeController.Get">
+            <summary>
+            Gets the list of all Employees.
+            </summary>
+            <returns>The list of Employees.</returns>
+            <response code="200">Returns the items</response>
+        </member>
+        <member name="M:RateLimiting_Using_AspNetCoreRateLimitPackage.Controller.EmployeeController.Post(RateLimiting_Using_AspNetCoreRateLimitPackage.Entity.Employee)">
+            <summary>
+            Creates an Employee.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Employee
+                {        
+                  "firstName": "Test",
+                  "lastName": "Name",
+                  "emailId": "Test.Name@gmail.com"        
+                }
+            </remarks>
+            <param name="employee"></param>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+    </members>
+</doc>
